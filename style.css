@@ -1,11 +1,24 @@
+* {
+    position: fixed;
+}
+
 body {
     font-family: "Poppins";
 }
 footer {
-    position: fixed;
-    left: 10px;
+    left: 900px;
     bottom: -10px;
     color: white;
     text-shadow: 2px 2px 2px black;
-    
 }
+.bottom-locked {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+.back-button {
+    right: 5px;
+    top: 10px;
+    width: 100px;
+}
+

@@ -1,6 +1,10 @@
-html {
+:default {
     cursor: none;
 }
+:hover {
+    cursor: none;
+}
+
 .cursor {
     position: fixed;
     pointer-events: none;
