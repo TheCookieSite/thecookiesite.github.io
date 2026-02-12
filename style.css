@@ -1,18 +1,19 @@
 * {
-    position: fixed;
+    box-sizing: border-box;
 }
-
 body {
+    height: 100vh;
     font-family: "Poppins";
+    margin: 0;
 }
 footer {
-    left: 900px;
-    bottom: -10px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 .bottom-locked {
-    position: fixed;
     left: 0px;
     bottom: 0px;
 }
@@ -21,4 +22,39 @@ footer {
     top: 10px;
     width: 100px;
 }
+.fixed {
+    position: fixed;
+}
 
+#mobile-content {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #content {
+        display: none;
+    }
+    .cursor {
+        display: none;
+    }
+    #mobile-content {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        
+        font-size: xx-large;
+        background-image: url(media/index.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    #mobile-content h1 {
+        position: absolute;
+        width: 100%;
+        bottom: 500px;
+    }
+}
