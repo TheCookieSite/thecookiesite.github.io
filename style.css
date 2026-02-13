@@ -10,11 +10,11 @@ body {
     height: 1080px;
     font-family: "Poppins";
     margin: 0;
+    overflow: hidden;
 }
 #content {
     position: fixed;
     bottom: 0;
-    overflow: visible;
     width: 1920px;
     height: 1080px;
 }
@@ -32,6 +32,7 @@ footer {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
+    font-size: 50px;
 }
 .back-button {
     position: fixed;
@@ -45,6 +46,12 @@ footer {
 
 #mobile-content {
     display: none;
+    text-align: center;
+    font-size: 20px;
+}
+#mobile-content img {
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (pointer: coarse) {
@@ -52,13 +59,19 @@ footer {
             display: none;
         }
 }
-
 @media screen and (max-width: 480px) {
+
+        body {
+            width: auto;
+        }
+
         #mobile-content {
-            display: block;
+            display: unset;
         }
         #content {
             display: none;
         }
+        footer {
+            display: none;
+        }
 }
-
