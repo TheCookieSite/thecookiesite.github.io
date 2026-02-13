@@ -25,7 +25,7 @@ body {
     left: 0px;
     bottom: 0px;
 }
-footer {
+/* footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -33,7 +33,7 @@ footer {
     color: white;
     text-shadow: 2px 2px 2px black;
     font-size: 50px;
-}
+} */
 .back-button {
     position: fixed;
     right: 5px;
@@ -69,8 +69,7 @@ footer {
             display: unset;
         }
         #content,
-        .back-button,
-        footer {
+        .back-button {
             display: none;
         }
 }
