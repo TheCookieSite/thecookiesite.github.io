@@ -1,60 +1,67 @@
 * {
     box-sizing: border-box;
 }
+html {
+    height: 100dvh;
+}
 body {
-    height: 100vh;
+    min-height: 100dvh;
     font-family: "Poppins";
     margin: 0;
 }
+#content {
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+    width: 1920px;
+    height: 1080px;
+    transform: scaleX(100vw / 1920px) scaleY(100vh / 1080px);
+}
+.absolute {
+    position: absolute;
+}
+.bottom-locked {
+    left: 0px;
+    bottom: 0px;
+}
 footer {
+    position: fixed;
     bottom: 0px;
     width: 100%;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
-.bottom-locked {
-    left: 0px;
-    bottom: 0px;
-}
 .back-button {
+    position: fixed;
     right: 5px;
     top: 10px;
     width: 100px;
 }
-.fixed {
-    position: fixed;
+.absolute img {
+    vertical-align: bottom;
 }
 
 #mobile-content {
     display: none;
 }
 
-@media screen and (max-width: 1280px) {
-    #content {
-        display: none;
-    }
-    .cursor {
-        display: none;
-    }
-    #mobile-content {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        
-        font-size: xx-large;
-        background-image: url(media/index.png);
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-    }
-
-    #mobile-content h1 {
-        position: absolute;
-        width: 100%;
-        bottom: 500px;
-    }
+@media screen and (pointer: coarse) {
+        .cursor {
+            display: none;
+        }
 }
+
+@media screen and (max-width: 480px) {
+        #mobile-content {
+            display: block;
+        }
+        #content {
+            display: none;
+        }
+}
+.test {
+    position: absolute;
+    bottom: 0;
+}
+

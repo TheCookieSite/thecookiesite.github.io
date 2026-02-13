@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>index</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Street - Cookie Cafe</title>
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
   
@@ -23,6 +26,15 @@
     left: 1690px;
     bottom: 255px;
   }
+  .test {
+        position: absolute;
+    bottom: 0;
+    border: 1px solid blue;
+    width: 256px;
+    overflow: visible;
+    height: 156px;
+  }
+  
   </style>
   
   <link rel="stylesheet" href="/cursor/cursor.css">
@@ -32,21 +44,28 @@
 <body>
   
   <div id="content">
-    <img src="/media/index/bg.png" alt="A background" class="fixed bottom-locked">
+    <img src="/media/index/bg.png" alt="A background" class="absolute bottom-locked" width="1920">
     
-    <a id="cafe_door" href="/cafe"><img src="/media/index/cafe_door.png" alt="A cafe door" class="fixed cafe-door"></a>
-    <a id="arcade_door"><img src="/media/index/arcade_door.png" alt="An arcade door" class="fixed arcade-door"></a>
-    <a id="house_door"><img src="/media/index/house_door.png" alt="A house door" class="fixed house-door"></a>
+    <a id="cafe_door" href="/cafe" class="absolute cafe-door"><img src="/media/index/cafe_door.png" alt="A cafe door"></a>
+    <a id="arcade_door" class="absolute arcade-door"><img src="/media/index/arcade_door.png" alt="An arcade door"></a>
+    <a id="house_door" class="absolute house-door"><img src="/media/index/house_door.png" alt="A house door"></a>
     
-    <img src="/media/index/road.png" alt="A road" class="fixed bottom-locked">
+    <img src="/media/index/road.png" alt="A road" class="absolute bottom-locked" width="1920">
+
   </div>
 
-  
   <div id="mobile-content">
-    <h1>WEBSITE FOR DESKTOP ONLY</h1>
+    LOLS
   </div>
 
-  <footer class="fixed">
+  <!-- <div class="test">
+    
+    <img src="/media/cloud.png" alt="IT WORKS!" width="256px">
+
+    <img src="/media/index/road.png" alt="A road" class="absolute bottom-locked">
+  </div> -->
+  
+  <footer>
     <p>cookiecafe.site</p>
   </footer>
   

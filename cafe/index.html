@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <title>cafe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafe - Cookie Cafe</title>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
     
     <link rel="stylesheet" href="/style.css">
     
     <style>
+        body {
+            background-color: #928171;
+        }
         .door {
             left: 1155px;
             bottom: 210px;
@@ -27,6 +33,10 @@
             left: 560px;
             bottom: 200px;
         }
+        .bar-seat {
+            left: 220px;
+            bottom: 30px;
+        }
     </style>
     
     <link rel="stylesheet" href="/cursor/cursor.css">
@@ -35,18 +45,20 @@
 <body>
     
     <div id="content">
-        <img src="/media/cafe/bg.png" alt="A background" class="fixed bottom-locked">
+        <img src="/media/cafe/bg.png" alt="A background" class="absolute bottom-locked">
 
-        <a id="door"><img src="/media/cafe/door.png" alt="A door" class="fixed door"></a>
-        <img src="/media/cafe/table_chair.png" alt="A background" class="fixed table-chair">
-        <a id="shelf"><img src="/media/cafe/shelf.png" alt="A shelf" class="fixed shelf"></a>
+        <a id="door"><img src="/media/cafe/door.png" alt="A door" class="absolute door"></a>
+        <img src="/media/cafe/table_chair.png" alt="A background" class="absolute table-chair">
+        <a id="shelf"><img src="/media/cafe/shelf.png" alt="A shelf" class="absolute shelf"></a>
+
         <a id="counter">
-            <img src="/media/cafe/shopkeeper.png" alt="A shopkeeper" class="fixed shopkeeper">
-            <img src="/media/cafe/counter.png" alt="A counter" class="fixed counter">
+            <img src="/media/cafe/shopkeeper.png" alt="A shopkeeper" class="absolute shopkeeper">
+            <img src="/media/cafe/counter.png" alt="A counter" class="absolute counter">
         </a>
+        <img src="/media/cafe/bar_seat.png" alt="A bar seat" class="absolute bar-seat">
     </div>
 
-    <a href=".." id="back"><img src="/media/back_button.png" alt="A back button" class="fixed back-button"></a>
+    <a href=".." id="back"><img src="/media/back_button.png" alt="A back button" class="absolute back-button"></a>
 
 </body>
 </html>
