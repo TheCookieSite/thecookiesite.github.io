@@ -68,9 +68,8 @@ footer {
         #mobile-content {
             display: unset;
         }
-        #content {
-            display: none;
-        }
+        #content,
+        .back-button,
         footer {
             display: none;
         }
