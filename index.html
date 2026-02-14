@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/style.css">
   
   <style>
-    body {
-      background-color: rgb(133, 215, 236);
+  body {
+    background-color: rgb(133, 215, 236);
   }
   .cafe-door {
     left: 825px;
@@ -25,7 +25,7 @@
     bottom: 255px;
   }
   .test {
-        position: absolute;
+    position: absolute;
     bottom: 0;
     border: 1px solid blue;
     width: 256px;
@@ -42,13 +42,13 @@
 <body>
   
   <div id="content">
-    <img src="/media/index/bg.png" alt="A background" class="absolute bottom-locked" width="1920">
+    <img src="/media/index/bg.png" alt="A background" class="absolute bottom-locked" width="1920" draggable="false">
     
-    <a id="cafe_door" href="/cafe" class="absolute cafe-door"><img src="/media/index/cafe_door.png" alt="A cafe door"></a>
-    <a id="arcade_door" class="absolute arcade-door"><img src="/media/index/arcade_door.png" alt="An arcade door"></a>
-    <a id="house_door" class="absolute house-door"><img src="/media/index/house_door.png" alt="A house door"></a>
+    <a id="cafe_door" href="/cafe"><img src="/media/index/cafe_door.png" class="absolute cafe-door" alt="A cafe door" draggable="false"></a>
+    <a id="arcade_door"><img src="/media/index/arcade_door.png" class="absolute arcade-door" alt="An arcade door" draggable="false"></a>
+    <a id="house_door"><img src="/media/index/house_door.png" class="absolute house-door" alt="A house door" draggable="false"></a>
     
-    <img src="/media/index/road.png" alt="A road" class="absolute bottom-locked" width="1920">
+    <img src="/media/index/road.png" alt="A road" class="absolute bottom-locked" width="1920" draggable="false">
 
   </div>
 
@@ -56,7 +56,7 @@
     <h1>The website doesn't support mobile!</h1>
     <h3>Please open the site on desktop</h3>
 
-    <img src="/media/broken_cookie.png" alt="" width="256px">
+    <img src="/media/broken_cookie.png" alt="" width="256px" draggable="false">
   </div>
   
 </body>

@@ -25,6 +25,9 @@ body {
 .absolute {
     position: absolute;
 }
+.absolute img {
+    vertical-align: bottom;
+}
 .bottom-locked {
     left: 0px;
     bottom: 0px;
@@ -34,9 +37,6 @@ body {
     right: 5px;
     top: 10px;
     width: 100px;
-}
-.absolute img {
-    vertical-align: bottom;
 }
 
 #mobile-content {
