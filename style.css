@@ -4,15 +4,11 @@
 html {
     height: 100%;
 }
-@font-face {
-    font-family: "Poppins";
-    src: url("https://fonts.googleapis.com/css2?family=Poppins");
-}
 body {
     position: relative;
     width: 1920px;
     height: 1080px;
-    font-family: "Poppins", Arial;
+    font-family: "Schoolbell", Arial;
     margin: 0;
     overflow: hidden;
 }
@@ -64,10 +60,11 @@ body {
         }
 
         #mobile-content {
-            display: unset;
+            display: block;
         }
         #content,
-        .back-button {
+        .back-button,
+        .error {
             display: none;
         }
 }

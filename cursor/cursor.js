@@ -22,4 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.addEventListener("visibilitychange", () => {
+    if(cursor.style.display === "none"){
+      cursor.style.display = "unset";
+    }
+    else{
+      cursor.style.display = "none";
+    }
+    
+  });
 });
