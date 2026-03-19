@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const cursor = document.createElement('img');
-  cursor.src = '/cursor/mouse_default.png';
+  cursor.src = '/cursor/mouse_default.webp';
   cursor.classList.add('cursor');
   document.body.appendChild(cursor);
 
@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   links.forEach((link) => {
     link.addEventListener('mouseenter', () => {
-      cursor.src = '/cursor/mouse_pointer.png';
+      cursor.src = '/cursor/mouse_pointer.webp';
     });
 
     link.addEventListener('mouseleave', () => {
-      cursor.src = '/cursor/mouse_default.png';
+      cursor.src = '/cursor/mouse_default.webp';
     });
   });
 
