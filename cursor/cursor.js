@@ -5,12 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
   cursor.classList.add('cursor');
   document.body.appendChild(cursor);
 
+  let clientLeft;
+  let clientTop;
+
   document.addEventListener('mousemove', (event) => {
-    cursor.style.left = event.clientX + 'px';
+    clientLeft = event.clientX
+    clientTop = event.clientY
+    cursor.style.left = clientLeft + 'px';
     cursor.style.top = event.clientY + 'px';
   });
 
   const links = document.querySelectorAll('a');
+
+  const texts = document.querySelectorAll('p')
 
   links.forEach((link) => {
     link.addEventListener('mouseenter', () => {

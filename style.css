@@ -35,6 +35,10 @@ body {
     width: 100px;
 }
 
+.hidden {
+    display: none;
+}
+
 #mobile-content {
     display: none;
 }
@@ -46,7 +50,9 @@ body {
     display: block;
     margin: 0 auto;
 }
-
+a, a:visited {
+    color: rgb(30, 146, 182);
+}
 @media screen and (pointer: coarse) {
         .cursor {
             display: none;
@@ -63,8 +69,7 @@ body {
             display: block;
         }
         #content,
-        .back-button,
-        .error {
+        .back-button {
             display: none;
         }
 }

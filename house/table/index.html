@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table - Cookie Cafe</title>
+
+    <link rel="icon" type="image/x-icon" href="/media/favicon.webp">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schoolbell">
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        body {
+            background-color: #a87b3b;
+        }
+        .letter {
+            left: 975px;
+            bottom: 150px;
+        }
+        .letter-text {
+            z-index: 1;
+            left: 1120px;
+            bottom: 650px;
+            margin: 0;
+            font-size: 40px;
+        }
+        .book-text {
+            z-index: 1;
+            left: 145px;
+            bottom: 240px;
+            margin: 0;
+            font-size: 35px;
+            transform: rotate(2deg);
+        }
+    </style>
+    
+    <link rel="stylesheet" href="/cursor/cursor.css">
+    <script src="/cursor/cursor.js"></script>
+</head>
+<body>
+    
+    <div id="content">
+        <img src="/media/house/table/bg.png" class="absolute bottom-locked" draggable="false">
+
+        <p class="absolute book-text">
+                                      Hi, I am the creator<br>
+                                      of this website. I<br>
+                                      made it because a<br>
+                                      lot of websites have<br>
+                                      lost their creativity.<br>
+                                      My idea with this site<br>
+                                      was to make<br>
+                                      something fun, simple<br> 
+                                      and cool. This site<br>
+                                      (almost) doesn't even<br>
+                                      have a UI, and doesn't<br>
+                                      have any good art    
+            </p>
+
+        <a id="letter" href="javascript:void(0)" onclick="toggleLetter()">
+            <img src="/media/house/table/letter_closed.png" class="absolute letter" draggable="false">
+        </a>
+        <p id="letter-text" class="absolute letter-text hidden">
+            Write to me at <br>
+            contact@cookiecafe.site,
+            <br>My youtube is <a href="https://youtube.com/@thecookiecafe">@thecookiecafe</a>
+        </p>
+
+    <a href=".." id="back"><img src="/media/back_button.webp" alt="Back button" class="absolute back-button" draggable="false"></a>
+        </div>
+
+    <div id="mobile-content" class="error">
+
+        <h1>The website doesn't support mobile!</h1>
+        <h3>Please open the site on desktop</h3>
+
+        <img src="/media/broken_cookie.webp" width="256px">
+    </div>
+
+    <script>
+        function toggleLetter(e) {
+            let letter = document.getElementById('letter').firstElementChild;
+            let letterText = document.getElementById('letter-text');
+            let src = letter.src;
+            if (/closed/.test(src)) {
+                src = src.replace('closed','open');
+                letterText.classList.remove('hidden');
+            }
+            else {
+                src = src.replace('open', 'closed');
+                letterText.classList.add('hidden');
+            }
+            letter.src = src;
+        }
+    </script>
+
+
+</body>
+</html>
